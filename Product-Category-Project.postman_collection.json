@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "739755d6-e8e2-488a-bdec-e4534e3e5c7e",
+		"name": "Product-Category-Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaveCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cname\": \"Electronic\",\r\n    \"cdescription\": \" Electronic - Mobiles\",\r\n    \"product\" :[\r\n        {\r\n         \"pname\": \"vivo\",\r\n         \"pdescription\": \"5G Mobile\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/category"
+			},
+			"response": []
+		},
+		{
+			"name": "get Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/category"
+			},
+			"response": []
+		},
+		{
+			"name": "get all Product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get category by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cname\": \"Electronic-new\",\r\n    \"cdescription\": \" Electronic- 5G Mobiles\",\r\n    \"product\" :[\r\n        {\r\n         \"pname\": \"samsung\",\r\n         \"pdescription\": \"5G Mobile\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/category/102"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cata by ID",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "save Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pname\": \"Power Bank\",\r\n    \"pdescription\": \"for charging\",\r\n    \"Category\": {\r\n        \"cname\": \"Electronic\",\r\n        \"cdescription\": \"charging accsesories\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "get Product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pname\": \"Power Bank\",\r\n    \"pdescription\": \"for charging\",\r\n    \"category\": {\r\n        \"cname\": \"Electronic\",\r\n        \"cdescription\": \"charging accsesories\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/52"
+			},
+			"response": []
+		}
+	]
+}
