@@ -28,7 +28,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/api/category"
+				"url": "http://localhost:8080/api/category?page=3"
 			},
 			"response": []
 		},
@@ -97,7 +97,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/api/products/1"
+				"url": "http://localhost:8080/api/products?page=2"
 			},
 			"response": []
 		},
